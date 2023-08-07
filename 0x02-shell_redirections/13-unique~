@@ -1,0 +1,3 @@
+#!/bin/bash
+read -a list
+echo $list | sort -u
