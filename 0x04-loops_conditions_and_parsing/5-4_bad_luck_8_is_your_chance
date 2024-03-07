@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script does something
+# This script different messages based on the loop iteration
 counter=0
 while [ $counter -lt 10 ]; do
     if [ $counter -eq 4 ]; then
