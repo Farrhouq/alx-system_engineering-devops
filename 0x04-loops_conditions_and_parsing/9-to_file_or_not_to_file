@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # This script checks about a file
 filename="school"
-if [ -e $filename ]; then
+if [ -e "$filename" ]; then
     echo "school file exists"
-    if [ -s $filename ]; then
+    if [ -s "$filename" ]; then
         echo "school file is empty"
     else
         echo "school file is not empty"
     fi
     
-    if [ -f $filename ]; then
+    if [ -f "$filename" ]; then
         echo "school is a regular file"
     fi
 else
