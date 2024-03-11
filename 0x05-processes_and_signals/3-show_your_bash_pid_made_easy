@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Easier version of file 2
+pids=$(pgrep bash)
+
+for p in $pids; do
+    echo $p "bash"
+done
