@@ -3,5 +3,5 @@
 pids=$(pgrep bash)
 
 for p in $pids; do
-    echo $p "bash"
+    echo "$p" "bash"
 done
