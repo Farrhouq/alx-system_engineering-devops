@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Find the PID of the process
 pid=$(pgrep -x bash | tail -n 1)
 kill "$pid"
