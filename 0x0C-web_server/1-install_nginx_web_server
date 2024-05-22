@@ -2,7 +2,7 @@
 # This script installs and configures nginx
 
 sudo su
-apt-get update
+apt-get update -y
 apt-get install -y nginx
 
 echo "Hello World!" > /var/www/html/index.html
