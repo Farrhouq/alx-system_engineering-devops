@@ -7,14 +7,10 @@ apt-get install -y nginx
 
 echo "Hello World!" > /var/www/html/index.html
 echo "server {
-    listen 80;
-    listen [::]:80 default_server;
-    root /var/www/html;
-    index index.html index.htm;
-    location /redirect_me {
-        return 301 https://youtube.com/watch?v=QH@-TGUlwu4;
-    }
-}" > /etc/nginx/sites-available/default
+    server_name farrhouqbnb.tech;
+    rewrite /redirect_me https://youtube.com/watch?v=QH@-TGUlwu4 permanent;
+}
+" > /etc/nginx/sites-available/default
 
 sudo service nginx restart
 sudo service nginx start
