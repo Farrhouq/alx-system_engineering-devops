@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script installs and configures nginx
+
+sudo su
+apt-get update -y
+apt-get install -y nginx
+
+echo "Hello World!" > /var/www/html/index.html
+echo "if ($request_filename ~ oldfile.html){
+    rewrite ^ http://example.com/newfile.html? permanent;
+}" > /var/www/html/redirects.conf
+
+sudo service nginx restart
+sudo service nginx start
