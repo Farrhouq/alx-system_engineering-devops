@@ -9,7 +9,8 @@ echo "Hello World!" > /var/www/html/index.html
 echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
 
 echo "server {
-    server_name 490305-web-02;
+    server_name farrhouqbnb.tech;
+    add_header X-Served-By $HOSTNAME;
     rewrite /redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 redirect;
 
 
